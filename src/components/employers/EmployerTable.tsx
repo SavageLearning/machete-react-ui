@@ -15,8 +15,11 @@ import axios from 'axios';
 //   }
 // }
 
+const configuration = {
+    apiKey: "",
+    username: ""
+};
 const getEmployersList = client.EmployersApiFp().apiEmployersGet();
-var employers:  Array<EmployersList>;
 
 
 export const EmployerTable: FunctionComponent = () => {
@@ -24,12 +27,12 @@ export const EmployerTable: FunctionComponent = () => {
 //   const employers = useSelector(getEmployers) || [];
     useEffect(() => {
         getEmployersList().then(response => {
-         setEmployers(response);
+         setEmployers(response.data);
         });
     }, []);
     const [selectedRow, setSelectedRow] = useState();
     const [showDialog, setShowDialog] = useState(false);
-    const [employers, setEmployers] = useState();
+    const [employers, setEmployers] = useState<EmployersList[]>({} as EmployersList[]);
 
   
 
