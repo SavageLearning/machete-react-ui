@@ -1,25 +1,37 @@
 import MaterialTable from 'material-table';
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, useState, useEffect } from 'react';
 import * as client from 'machete-api-axios-client';
 import {EmployersList } from 'machete-api-axios-client';
+import axios from 'axios';
 
-const getEmployers = (state: any) => { 
-  return state.entities.employers; 
-}
+// const getEmployers = (state: any) => { 
+//   return state.entities.employers; 
+// }
 
-const employersRequest: TypedQueryConfig<{ employers: EmployersList[]}, EmployersList[]> = {
-  transform: (body: any) => ({ employers: body}),
-  update: {
-    employers: (oldValue: EmployersList[], newValue: EmployersList[]): EmployersList[] =>  newValue
-  }
-}
+// const employersRequest: TypedQueryConfig<{ employers: EmployersList[]}, EmployersList[]> = {
+//   transform: (body: any) => ({ employers: body}),
+//   update: {
+//     employers: (oldValue: EmployersList[], newValue: EmployersList[]): EmployersList[] =>  newValue
+//   }
+// }
+
+const getEmployersList = client.EmployersApiFp().apiEmployersGet();
+var employers:  Array<EmployersList>;
 
 
 export const EmployerTable: FunctionComponent = () => {
-  const [{ isPending }] = useRequest(client.EmployersApiFp({}, employersRequest));
-  const employers = useSelector(getEmployers) || [];
-  const [selectedRow, setSelectedRow] = useState();
-  const [showDialog, setShowDialog] = useState(false);
+//   const [{ isPending }] = useRequest(client.EmployersApiFp({}, employersRequest));
+//   const employers = useSelector(getEmployers) || [];
+    useEffect(() => {
+        getEmployersList().then(response => {
+         setEmployers(response);
+        });
+    }, []);
+    const [selectedRow, setSelectedRow] = useState();
+    const [showDialog, setShowDialog] = useState(false);
+    const [employers, setEmployers] = useState();
+
+  
 
   return (
     <MaterialTable
@@ -37,3 +49,11 @@ export const EmployerTable: FunctionComponent = () => {
     />
   );
 }
+
+// fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+// JCii: Axios has hardcoded behavior around the existence or absence of a property.
+//       The OpenAPI template generates code that deletes said property, which 
+//       throws TS2790 in TS4+
+// Links: https://stackoverflow.com/questions/63702057/what-is-the-logic-behind-error-the-operand-of-a-delete-operator-must-be-opti
+//        https://stackoverflow.com/questions/7517332/node-js-url-parse-result-back-to-string/7517673#7517673
+//        https://stackoverflow.com/questions/34880522/mute-ignore-ts2307-error-from-typescript-tsc/51797689#51797689
