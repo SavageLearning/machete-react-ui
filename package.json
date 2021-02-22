@@ -47,7 +47,6 @@
     "jest-circus": "26.6.0",
     "jest-resolve": "26.6.0",
     "jest-watch-typeahead": "0.6.1",
-    "machete-api-axios-client": "file:autogen/clients/machete-api-axios-client",
     "material-table": "^1.69.2",
     "mini-css-extract-plugin": "0.11.3",
     "optimize-css-assets-webpack-plugin": "5.0.4",

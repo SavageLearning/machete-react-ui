@@ -1,8 +1,9 @@
 import MaterialTable from 'material-table';
 import React, { FunctionComponent, useState, useEffect } from 'react';
-import * as client from 'machete-api-axios-client';
-import {EmployersList } from 'machete-api-axios-client';
+import * as client from '../../machete-api-axios-client/';
+import {Configuration, EmployersList } from '../../machete-api-axios-client';
 import axios from 'axios';
+import { Button } from '@material-ui/core';
 
 // const getEmployers = (state: any) => { 
 //   return state.entities.employers; 
@@ -10,46 +11,51 @@ import axios from 'axios';
 
 // const employersRequest: TypedQueryConfig<{ employers: EmployersList[]}, EmployersList[]> = {
 //   transform: (body: any) => ({ employers: body}),
-//   update: {
+//   update : {
 //     employers: (oldValue: EmployersList[], newValue: EmployersList[]): EmployersList[] =>  newValue
 //   }
 // }
 
-const configuration = {
-    apiKey: "",
-    username: ""
+const configuration: Configuration = {
 };
-const getEmployersList = client.EmployersApiFp().apiEmployersGet();
 
+const options = {
+  url: 'http://localhost:4213/'
+}
+const getEmployersList = client.EmployersApiFp(configuration).apiEmployersGet(0, 0, options);
 
 export const EmployerTable: FunctionComponent = () => {
 //   const [{ isPending }] = useRequest(client.EmployersApiFp({}, employersRequest));
 //   const employers = useSelector(getEmployers) || [];
     useEffect(() => {
         getEmployersList().then(response => {
+          console.log(response);
          setEmployers(response.data);
+        }).catch(error => {
+          console.log(error);
         });
     }, []);
-    const [selectedRow, setSelectedRow] = useState();
-    const [showDialog, setShowDialog] = useState(false);
+    //const [selectedRow, setSelectedRow] = useState();
+    //const [showDialog, setShowDialog] = useState(false);
     const [employers, setEmployers] = useState<EmployersList[]>({} as EmployersList[]);
 
   
 
   return (
-    <MaterialTable
-        // other props
-        title={'Employers'}
-        data={employers}
-        columns={[
-          {title: 'Id', field: 'ID'},
-          {title: 'Name', field: 'name'},
-          {title: 'Address', field: 'address1'},
-          {title: 'City', field: 'city'},
-          {title: 'Phone', field: 'phone'},
-          {title: 'Zipcode', field: 'zipcode'}
-        ]}
-    />
+    // <MaterialTable
+    //     // other props
+    //     title={'Employers'}
+    //     data={employers}
+    //     columns={[
+    //       {title: 'Id', field: 'ID'},
+    //       {title: 'Name', field: 'name'},
+    //       {title: 'Address', field: 'address1'},
+    //       {title: 'City', field: 'city'},
+    //       {title: 'Phone', field: 'phone'},
+    //       {title: 'Zipcode', field: 'zipcode'}
+    //     ]}
+    // />
+    <Button color="primary">Hello World</Button>
   );
 }
 

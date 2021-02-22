@@ -1422,6 +1422,7 @@ export const ConfigsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -1456,6 +1457,7 @@ export const ConfigsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -1490,6 +1492,7 @@ export const ConfigsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -1527,6 +1530,7 @@ export const ConfigsApiAxiosParamCreator = function (configuration?: Configurati
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof configVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -1560,6 +1564,7 @@ export const ConfigsApiAxiosParamCreator = function (configuration?: Configurati
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof configVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -1802,6 +1807,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -1836,6 +1842,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -1870,6 +1877,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -1907,6 +1915,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof employerVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -1940,6 +1949,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof employerVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -1970,6 +1980,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2001,6 +2012,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof employerVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -2034,6 +2046,7 @@ export const EmployersApiAxiosParamCreator = function (configuration?: Configura
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof employerVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -2368,6 +2381,7 @@ export const ExportsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2402,6 +2416,7 @@ export const ExportsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2451,6 +2466,7 @@ export const ExportsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2621,6 +2637,7 @@ export const IdentityApiAxiosParamCreator = function (configuration?: Configurat
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2652,6 +2669,7 @@ export const IdentityApiAxiosParamCreator = function (configuration?: Configurat
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof credentialsViewModel !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -2682,6 +2700,7 @@ export const IdentityApiAxiosParamCreator = function (configuration?: Configurat
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2725,6 +2744,7 @@ export const IdentityApiAxiosParamCreator = function (configuration?: Configurat
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2768,6 +2788,7 @@ export const IdentityApiAxiosParamCreator = function (configuration?: Configurat
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2796,6 +2817,7 @@ export const IdentityApiAxiosParamCreator = function (configuration?: Configurat
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -2824,6 +2846,7 @@ export const IdentityApiAxiosParamCreator = function (configuration?: Configurat
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3126,6 +3149,7 @@ export const LookupsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3154,6 +3178,7 @@ export const LookupsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3188,6 +3213,7 @@ export const LookupsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3222,6 +3248,7 @@ export const LookupsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3259,6 +3286,7 @@ export const LookupsApiAxiosParamCreator = function (configuration?: Configurati
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof lookupVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -3292,6 +3320,7 @@ export const LookupsApiAxiosParamCreator = function (configuration?: Configurati
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof lookupVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -3557,6 +3586,7 @@ export const OnlineOrdersApiAxiosParamCreator = function (configuration?: Config
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3591,6 +3621,7 @@ export const OnlineOrdersApiAxiosParamCreator = function (configuration?: Config
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3628,6 +3659,7 @@ export const OnlineOrdersApiAxiosParamCreator = function (configuration?: Config
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof paypalPayment !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -3661,6 +3693,7 @@ export const OnlineOrdersApiAxiosParamCreator = function (configuration?: Config
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof workOrderVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -3860,6 +3893,7 @@ export const ReportsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -3909,6 +3943,7 @@ export const ReportsApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4056,6 +4091,7 @@ export const ScheduleRulesApiAxiosParamCreator = function (configuration?: Confi
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4090,6 +4126,7 @@ export const ScheduleRulesApiAxiosParamCreator = function (configuration?: Confi
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4124,6 +4161,7 @@ export const ScheduleRulesApiAxiosParamCreator = function (configuration?: Confi
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4161,6 +4199,7 @@ export const ScheduleRulesApiAxiosParamCreator = function (configuration?: Confi
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof scheduleRuleVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -4194,6 +4233,7 @@ export const ScheduleRulesApiAxiosParamCreator = function (configuration?: Confi
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof scheduleRuleVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -4432,6 +4472,7 @@ export const TransportProvidersApiAxiosParamCreator = function (configuration?: 
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4466,6 +4507,7 @@ export const TransportProvidersApiAxiosParamCreator = function (configuration?: 
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4500,6 +4542,7 @@ export const TransportProvidersApiAxiosParamCreator = function (configuration?: 
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4537,6 +4580,7 @@ export const TransportProvidersApiAxiosParamCreator = function (configuration?: 
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof transportProviderVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -4570,6 +4614,7 @@ export const TransportProvidersApiAxiosParamCreator = function (configuration?: 
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof transportProviderVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -4606,6 +4651,7 @@ export const TransportProvidersApiAxiosParamCreator = function (configuration?: 
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4643,6 +4689,7 @@ export const TransportProvidersApiAxiosParamCreator = function (configuration?: 
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof transportProviderAvailabilityVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -4954,6 +5001,7 @@ export const TransportProvidersAvailabilityApiAxiosParamCreator = function (conf
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -4988,6 +5036,7 @@ export const TransportProvidersAvailabilityApiAxiosParamCreator = function (conf
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5022,6 +5071,7 @@ export const TransportProvidersAvailabilityApiAxiosParamCreator = function (conf
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5059,6 +5109,7 @@ export const TransportProvidersAvailabilityApiAxiosParamCreator = function (conf
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof transportProviderAvailabilityVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -5092,6 +5143,7 @@ export const TransportProvidersAvailabilityApiAxiosParamCreator = function (conf
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof transportProviderAvailabilityVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -5330,6 +5382,7 @@ export const TransportRulesApiAxiosParamCreator = function (configuration?: Conf
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5364,6 +5417,7 @@ export const TransportRulesApiAxiosParamCreator = function (configuration?: Conf
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5398,6 +5452,7 @@ export const TransportRulesApiAxiosParamCreator = function (configuration?: Conf
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5435,6 +5490,7 @@ export const TransportRulesApiAxiosParamCreator = function (configuration?: Conf
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof transportRuleVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -5468,6 +5524,7 @@ export const TransportRulesApiAxiosParamCreator = function (configuration?: Conf
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof transportRuleVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -5710,6 +5767,7 @@ export const WorkAssignmentsApiAxiosParamCreator = function (configuration?: Con
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5744,6 +5802,7 @@ export const WorkAssignmentsApiAxiosParamCreator = function (configuration?: Con
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5778,6 +5837,7 @@ export const WorkAssignmentsApiAxiosParamCreator = function (configuration?: Con
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -5815,6 +5875,7 @@ export const WorkAssignmentsApiAxiosParamCreator = function (configuration?: Con
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof workAssignmentVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -5848,6 +5909,7 @@ export const WorkAssignmentsApiAxiosParamCreator = function (configuration?: Con
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof workAssignmentVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -6096,6 +6158,7 @@ export const WorkOrdersApiAxiosParamCreator = function (configuration?: Configur
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -6130,6 +6193,7 @@ export const WorkOrdersApiAxiosParamCreator = function (configuration?: Configur
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -6164,6 +6228,7 @@ export const WorkOrdersApiAxiosParamCreator = function (configuration?: Configur
     
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
 
@@ -6201,6 +6266,7 @@ export const WorkOrdersApiAxiosParamCreator = function (configuration?: Configur
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof workOrderVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
@@ -6234,6 +6300,7 @@ export const WorkOrdersApiAxiosParamCreator = function (configuration?: Configur
 
             localVarUrlObj.query = {...localVarUrlObj.query, ...localVarQueryParameter, ...options.query};
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            /* @ts-ignore */
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...options.headers};
             const needsSerialization = (typeof workOrderVM !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
