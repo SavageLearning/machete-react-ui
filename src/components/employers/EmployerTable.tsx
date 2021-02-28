@@ -2,7 +2,7 @@ import MaterialTable from 'material-table';
 import React, { FunctionComponent, useState, useEffect } from 'react';
 import * as client from '../../machete-api-axios-client/';
 import {Configuration, EmployersList } from '../../machete-api-axios-client';
-import axios from 'axios';
+import globalAxios from 'axios';
 import { Button } from '@material-ui/core';
 
 // const getEmployers = (state: any) => { 
@@ -15,14 +15,15 @@ import { Button } from '@material-ui/core';
 //     employers: (oldValue: EmployersList[], newValue: EmployersList[]): EmployersList[] =>  newValue
 //   }
 // }
-
-const configuration: Configuration = {
-};
-
-const options = {
-  url: 'http://localhost:4213/'
-}
-const getEmployersList = client.EmployersApiFp(configuration).apiEmployersGet(0, 0, options);
+//const basePath = 'http://localhost:4213';
+const options = { headers: { 
+  'Content-type': 'application/json',
+  'Accept': 'application/json'
+}};
+// const config: Configuration = {
+//   baseOptions: options
+// }
+const getEmployersList = client.EmployersApiFp().apiEmployersGet(10,0, options);
 
 export const EmployerTable: FunctionComponent = () => {
 //   const [{ isPending }] = useRequest(client.EmployersApiFp({}, employersRequest));

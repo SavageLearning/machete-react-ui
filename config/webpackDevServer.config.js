@@ -111,9 +111,15 @@ module.exports = function (proxy, allowedHost) {
       app.use(errorOverlayMiddleware());
 
       if (fs.existsSync(paths.proxySetup)) {
+        console.log('lalalalalalalalalalalameememememememem');
         // This registers user provided middleware for proxy reasons
         require(paths.proxySetup)(app);
       }
+      app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+      });
     },
     after(app) {
       // Redirect to `PUBLIC_URL` or `homepage` from `package.json` if url not match
